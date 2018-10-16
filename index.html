@@ -26,9 +26,7 @@
         .navbar {
             width: 100%;
             /*把nav高度撐高*/
-            background-color: transparent;
             transition: 1s;
-            
         }
         
          .nav_logo{
@@ -36,19 +34,20 @@
          }
                
          .container{
-             width: 1200px;
+             width: 1140px;
         }
         
-       .bg-white{
+       .nav_bg{
             /* background-color: white; */
+            background-color: rgba(0, 0, 0, 0.5);
             transition: 1s;
         }
-      
+
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container p-4">
             <a class="navbar-brand" href="#">
                 <img class="nav_logo" src="./05-img/logo-words_工作區域 1.png" alt="Home">
@@ -59,14 +58,14 @@
             </button>
             <!-- ??? -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">最新消息</a>
-                    <a class="nav-item nav-link" href="#">推薦商品</a>
-                    <a class="nav-item nav-link" href="#">品牌故事</a>
-                    <a class="nav-item nav-link" href="#">產品櫥窗</a>
-                    <a class="nav-item nav-link" href="#">Blog</a>
-                    <a class="nav-item nav-link" href="#">送禮攻略</a>
-                </div>
+                <ul class="navbar-nav text-right">
+                    <li><a class="nav-item nav-link active" href="#">最新消息</a></li>
+                    <li><a class="nav-item nav-link" href="#">推薦商品</a></li>
+                    <li><a class="nav-item nav-link" href="#">品牌故事</a></li>
+                    <li><a class="nav-item nav-link" href="#">產品櫥窗</a></li>
+                    <li><a class="nav-item nav-link" href="#">配戴指南</a></li>
+                    <li><a class="nav-item nav-link" href="#">送禮攻略</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -101,18 +100,6 @@
             </div>
         </div>
     </div>
-
-    <a href="/images/bullet_cat.jpg" data-lightbox="image-set" data-title="My caption">
-        <img src="/images/bullet_cat.jpg" alt="">
-    </a>
-
-    <a style="display: none" href="/images/30379034482_8fc477cf19_b.jpg" data-lightbox="image-set" data-title="My caption">
-        <img src="/images/30379034482_8fc477cf19_b.jpg" alt="">
-    </a>
-    <a style="display: none" href="/images/White-cat-names.jpg" data-lightbox="image-set" data-title="My caption">
-        <img src="/images/White-cat-names.jpg" alt="">
-    </a>
-
 
     <div class="wrapper index">
         <div class="index-container index-main">
@@ -173,9 +160,9 @@
     <script>
         $(window).on("scroll", function () {
             if ($(window).scrollTop()) {
-                $('nav').addClass('bg-white');
+                $('nav').addClass('nav_bg');
             } else {
-                $('nav').removeClass('bg-white');
+                $('nav').removeClass('nav_bg');
             }
         })
 
