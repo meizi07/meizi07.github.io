@@ -229,35 +229,19 @@
             bottom: 50px;
             right: 100px;
         }
+
+
+        .section {
+            height: 100vh;
+            padding-top: 150px;
+            text-align: center;
+            background: #000000;
+        }
     </style>
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container p-4">
-            <a class="navbar-brand" href="#">
-                <img class="nav_logo" src="./05-img/logo-words_工作區域 1.png" alt="Home">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <??? -->
-    <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <ul class="navbar-nav text-right">
-                    <li><a class="nav-item nav-link active" href="#">最新消息</a></li>
-                    <li><a class="nav-item nav-link" href="#">推薦商品</a></li>
-                    <li><a class="nav-item nav-link" href="#">品牌故事</a></li>
-                    <li><a class="nav-item nav-link" href="#">產品櫥窗</a></li>
-                    <li><a class="nav-item nav-link" href="#">配戴指南</a></li>
-                    <li><a class="nav-item nav-link" href="#">送禮攻略</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-
     <header class="main_header">
-
         <div class="row">
             <div class="content">
                 <a class="logo" href="#">Uni House</a>
@@ -270,17 +254,85 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#sec01">Section 01</a></li>
-                        <li><a href="#sec02">Section 02</a></li>
-                        <li><a href="#sec03">Section 03</a></li>
-                        <li><a href="#sec04">Section 04</a></li>
+                        <li><a class="page-scroll" href="#sec01">Section 01</a></li>
+                        <li><a class="page-scroll" href="#sec02">Section 02</a></li>
+                        <li><a class="page-scroll" href="#sec03">Section 03</a></li>
+                        <li><a class="page-scroll" href="#sec04">Section 04</a></li>
                     </ul>
                 </nav>
             </div>
         </div> <!-- END row -->
     </header>
 
-    <div class="section_banner">
+    <div class="section">
+        <div id="section_banner" class="intro-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>One Page Website</h1>
+                        <p>I like clean code and I cannot lie</p>
+                        <a class="btn btn-default page-scroll" href="#sec01">Click Me to Scroll Down!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section">
+        <div id="sec01" class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>About Section</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <div class="section">
+        <div id="sec02" class="services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Services Section</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section">
+        <div id="sec03" class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Contact Section</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="section">
+        <div id="sec04" class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Footer Section</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<!-- <div class="section_banner">
         <div class="banner">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -309,9 +361,9 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="section_brand">
+<!-- <div class="section_brand">
         <div class="container">
             <div class="row">
                 <div class="col-lg">
@@ -319,92 +371,83 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-    <script src="/js/lightbox-plus-jquery.min.js"></script>
-    <script>
-        $(window).scroll(function () {
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+<script src="/js/lightbox-plus-jquery.min.js"></script>
+<script>
+    $(window).scroll(function () {
 
-            if ($(window).scrollTop() > 100) {
-                $('.main_header').addClass('sticky');
-            } else {
-                $('.main_header').removeClass('sticky');
-            }
-        });
+        if ($(window).scrollTop() > 100) {
+            $('.main_header').addClass('sticky');
+        } else {
+            $('.main_header').removeClass('sticky');
+        }
+    });
 
-        // Mobile Navigation
-        $('.mobile-toggle').click(function () {
-            if ($('.main_header').hasClass('open-nav')) {
-                $('.main_header').removeClass('open-nav');
-            } else {
-                $('.main_header').addClass('open-nav');
-            }
-        });
+    // Mobile Navigation
+    $('.mobile-toggle').click(function () {
+        if ($('.main_header').hasClass('open-nav')) {
+            $('.main_header').removeClass('open-nav');
+        } else {
+            $('.main_header').addClass('open-nav');
+        }
+    });
 
-        $('.main_header li a').click(function () {
-            if ($('.main_header').hasClass('open-nav')) {
-                $('.navigation').removeClass('open-nav');
-                $('.main_header').removeClass('open-nav');
-            }
-        });
+    $('.main_header li a').click(function () {
+        if ($('.main_header').hasClass('open-nav')) {
+            $('.navigation').removeClass('open-nav');
+            $('.main_header').removeClass('open-nav');
+        }
+    });
 
-        // navigation scroll
-        $('nav a').click(function (event) {
-            var id = $(this).attr("href");
-            var offset = 0;
-            var target = $(id).offset().top - offset;
-            $('html, body').animate({
-                scrollTop: target
-            }, 500);
-            event.preventDefault();
-        });
-        /* Scroll-to-Top Button */
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        });
 
-        $('.scrollup').click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 600);
-            return false;
-        });
-        /* WORK IN PROGRESS
-        NAVIGATION ACTIVE STATE IN SECTION AREA
-        */
-        var sections = $('section'), nav = $('nav'), nav_height = nav.outerHeight();
+    
+    const menuBtns = document.querySelectorAll(".main_header .page-scroll");
+    const menus = document.querySelectorAll(".section");
 
-        $(window).on('scroll', function () {
-            var cur_pos = $(this).scrollTop();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-            sections.each(function () {
-                var top = $(this).offset().top - nav_height,
-                    bottom = top + $(this).outerHeight();
-
-                if (cur_pos >= top && cur_pos <= bottom) {
-                    nav.find('a').removeClass('active');
-                    sections.removeClass('active');
-
-                    $(this).addClass('active');
-                    nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-                }
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
         });
+    });
+
+    // $(document).on('click', 'a[href^="#"]', function (event) {
+    //     event.preventDefault();
+
+    //     $('html, body').animate({
+    //         scrollTop: $($.attr(this, 'href')).offset().top
+    //     }, 500);
+    // });
 
 
-    </script>
+
+    // menuBtns.forEach(function (section, index) {
+    //     section.addEventListener('click', function () {
+    //         section.preventDefault();
+    //         menus[index].scrollIntoView({
+    //             block: 'start',
+    //             behavior: 'smooth',
+    //         })
+    //     });
+    // });
+
+
+
+
+
+</script>
 </body>
 
 </html>
