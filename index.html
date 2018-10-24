@@ -296,15 +296,16 @@
         #categories {
             height: 90vh;
             position: relative;
-            top: 8vh;
+            top: 1vh;
             display: grid;
+            justify-content: center;
             grid-template-columns: repeat(3, minmax(300px, 1fr));
             grid-template-rows: repeat(2, 1fr);
             grid-gap: 1rem;
         }
 
         .categories-container {
-            width: 90%;
+            width: 80%;
             margin: auto;
         }
 
@@ -321,7 +322,7 @@
             justify-content: center;
             color: #fff;
             font-size: 2rem;
-            margin: 30px 15px;
+            margin: 30px 0px;
         }
 
         /* Add hover effect on the h1 of the sub */
@@ -332,41 +333,67 @@
         }
 
         .tech {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/834949/pexels-photo-834949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./05-img/product_01.jpg);
             /*linear gradient successfullly adds a half transparent filter to the picure.*/
             background-position: center;
             background-size: cover;
         }
 
         .culture {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/682025/pexels-photo-682025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./05-img/product_02.jpg);
             background-position: center;
             background-size: cover;
         }
 
         .politics {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/2281/man-person-suit-united-states-of-america.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./05-img/product_03.jpg);
             background-position: center;
             background-size: cover;
         }
 
         .business {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/886465/pexels-photo-886465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./05-img/product_04.jpg);
             background-position: center;
             background-size: cover;
         }
 
         .health {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./05-img/product_05.jpg);
             background-position: center;
             background-size: cover;
         }
 
         .more {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/377058/pexels-photo-377058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./05-img/product_06.jpg);
             background-position: center;
             background-size: cover;
         }
+
+        @media (max-width:1139px) {
+            #categories {
+                position: relative;
+                height: 100%;
+                width: 90%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                overflow-x: hidden;
+            }
+        }
+
+        @media (max-width:880px) {
+            #categories {
+                position: relative;
+                height: 100%;
+                width: 90%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                overflow-x: hidden;
+            }
+        }
+
+        /* section_product end */
 
         /* section_contact start */
         img {
@@ -733,24 +760,26 @@
                         <h1>商品櫥窗</h1>
                     </div>
                 </div>
-                <div id="categories" class="categories-container">
-                    <div class="sub tech">
-                        <h1>Technology</h1>
-                    </div>
-                    <div class="sub culture">
-                        <h1>Culture</h1>
-                    </div>
-                    <div class="sub politics">
-                        <h1>Politics</h1>
-                    </div>
-                    <div class="sub business">
-                        <h1>Business</h1>
-                    </div>
-                    <div class="sub health">
-                        <h1>Health</h1>
-                    </div>
-                    <div class="sub more">
-                        <h1>More</h1>
+                <div class="container">
+                    <div id="categories" class="categories-container">
+                        <div class="sub tech">
+                            <h1>每天的精彩</h1>
+                        </div>
+                        <div class="sub culture">
+                            <h1>國王的積木</h1>
+                        </div>
+                        <div class="sub politics">
+                            <h1>花圈精靈</h1>
+                        </div>
+                        <div class="sub business">
+                            <h1>自我空間</h1>
+                        </div>
+                        <div class="sub health">
+                            <h1>木夏物語</h1>
+                        </div>
+                        <div class="sub more">
+                            <h1>翩翩起舞</h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -790,7 +819,7 @@
                             <div class="card">
                                 <div class="card_image"><img src="./05-img/content_pic_128.jpg"></div>
                                 <div class="card_content">
-                                    <h2 class="card_title">項鍊打結怎麼辦？Futuro告訴你你一定要知道的小撇步</h2>
+                                    <h2 class="card_title">項鍊打結怎麼辦？Futuro告訴你一定要知道的小撇步</h2>
                                     <p class="card_text">不管在什麼時候遇到項鍊打結的狀況，想要打扮美美的出門卻還要處理項鍊打結的問題...</p>
                                     <button class="btn card_btn">Read More</button>
                                 </div>
@@ -810,7 +839,7 @@
                             <div class="card">
                                 <div class="card_image"><img src="./05-img/content_pic_130.jpg"></div>
                                 <div class="card_content">
-                                    <h2 class="card_title">項鍊收納大絕招，Vacanza教你這3招，項鍊擺美美</h2>
+                                    <h2 class="card_title">項鍊收納大絕招，Futuro教你這3招，項鍊擺美美</h2>
                                     <p class="card_text">喜愛項鍊的女孩們一定瞭解這樣的情況，每次看到項鍊都會腦波變弱就下手了，不知不覺就累...</p>
                                     <button class="btn card_btn">Read More</button>
                                 </div>
