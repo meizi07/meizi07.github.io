@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+
+</head>
+
+<body>
+    <div class="cards">
+        <!--  card item start  -->
+        <div class="card_item">
+            <div class="front">
+                <div class="content-container">
+                    front
+                </div>
+            </div>
+            <div class="back">
+                <div class="content-container">
+                    back
+                </div>
+            </div>
+        </div>
+
+        <!--  card item start  -->
+        <div class="card_item">
+            <div class="front">
+                <div class="content-container">
+                    front
+                </div>
+            </div>
+            <div class="back">
+                <div class="content-container">
+                    back
+                </div>
+            </div>
+        </div>
+
+        <!--  card item start  -->
+        <div class="card_item">
+            <div class="front">
+                <div class="content-container">
+                    front
+                </div>
+            </div>
+            <div class="back">
+                <div class="content-container">
+                    back
+                </div>
+            </div>
+        </div>
+        <!--  card item start  -->
+        <div class="card_item">
+            <div class="front">
+                <div class="content-container">
+                    front
+                </div>
+            </div>
+            <div class="back">
+                <div class="content-container">
+                    back
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script>
+        $('.card_item .front, .card_item .back').on('click', function () {
+            var $this = $(this);
+            var $card = $this.parents('.card_item');
+            var $cards = $('.card_item').not($card);
+
+            $cards.removeClass('flip');
+
+            if ($card.hasClass('flip')) {
+                $card.removeClass('flip');
+            } else {
+                $card.addClass('flip');
+            }
+        });
+    </script>
+</body>
+
+</html>

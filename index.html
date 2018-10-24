@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Uni House 羊奶的家</title>
+    <title>Futuro Accessory</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -19,7 +19,7 @@
 
         body {
             color: #8f8f8f;
-            background: #f0f0f0;
+            /* background: #f0f0f0; */
             font-family: "Oswald", serif;
             font-weight: 300;
             -webkit-font-smoothing: antialiased;
@@ -232,11 +232,167 @@
 
 
         .section {
-            height: 100vh;
+            /* height: 100vh; */
             padding-top: 150px;
             text-align: center;
-            background: #f0f0f0;
+            /* background: #f0f0f0; */
         }
+
+        .title {
+            text-align: center;
+        }
+
+        .title.container {
+            background-color: #f0f0f0;
+        }
+
+        /* section_about start */
+        .section_parallax {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .bg-parallax {
+            height: 50vh;
+            /* background-color: aqua; */
+            background-image: url('./05-img/parallax_01.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .bg-parallax_2 {
+            height: 50vh;
+            /* background-color: aqua; */
+            background-image: url('./05-img/parallax_02.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .box-a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%, -50%);
+            letter-spacing: 3px;
+        }
+
+        .about_slogan {
+            font-size: 10pt;
+        }
+
+        .parallax_text {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        /* section_about end */
+
+        /* section_contact start */
+        img {
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .btn {
+            color: #ffffff;
+            padding: 0.8rem;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            font-weight: 400;
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: transparent;
+        }
+
+        .btn:hover {
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cards_item {
+            display: flex;
+            padding: 1rem;
+        }
+
+        @media (min-width: 40rem) {
+            .cards_item {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 56rem) {
+            .cards_item {
+                width: 33.3333%;
+            }
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 0.25rem;
+            box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .card_content {
+            padding: 1rem;
+            background: linear-gradient(to bottom left, #dad4ec 40%, #f3e7e9 100%);
+        }
+
+        .card_title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            margin: 0px;
+            text-align: left;
+        }
+
+        .card_text {
+            color: #ffffff;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 1.25rem;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        .made_by {
+            font-weight: 400;
+            font-size: 13px;
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .made_by a {
+            text-decoration: none;
+            color: #5e95ff;
+            font-weight: 700;
+        }
+
+
+
+
+
+
 
 
 
@@ -306,15 +462,15 @@
         }
 
         @media only screen and (min-width: 1280px) {
-            .contain {
+            .container {
                 width: 1200px;
                 margin: 0 auto;
             }
         }
 
         @media only screen and (max-width: 1139px) {
-            .contain .social {
-                width: 1000px;
+            .container .social {
+                width: 100%;
                 display: block;
             }
 
@@ -375,14 +531,41 @@
         </div> <!-- END row -->
     </header>
 
-    <div class="section">
-        <div id="section_banner" class="intro-section">
+
+    <div id="section_banner" class="intro-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./05-img/banner_01.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./05-img/banner_02.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./05-img/banner_03.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="title">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>One Page Website</h1>
-                        <p>I like clean code and I cannot lie</p>
-                        <a class="btn btn-default page-scroll" href="#sec01">Click Me to Scroll Down!</a>
+                        <h1>Futuro Accessory</h1>
+                        <p>:: 生活是饗宴，因為妝點，所以亮眼 :: </p>
+                        <a class="btn btn-default page-scroll" href="#sec01">前往品牌概念</a>
                     </div>
                 </div>
             </div>
@@ -390,12 +573,83 @@
     </div>
 
     <!-- About Section -->
-    <div class="section">
-        <div id="sec01" class="about-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>About Section</h1>
+    <div class="section_parallax">
+        <div class="bg-parallax">
+            <div id="sec01" class="about-section">
+                <div class="container">
+                    <div class="box-a">
+                        <h1>Beauty!</h1>
+                        <span class="about_slogan">致力於打扮精心的特色單品與飾件，就飾要你閃亮面對生活中的每一天。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="parallax_text" class="parallax_text">
+            <h1>About Us</h1>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+            background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+            'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+            23.399999618530273px; text-align: center;">來自西班牙文「F
+                U T U R O」</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+                background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+                'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+                23.399999618530273px; text-align: center;">有著未來的意思。</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+            background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+            'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+            23.399999618530273px; text-align: center;">&nbsp;</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+            background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+            'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+            23.399999618530273px; text-align: center;">但願，我們能在人生的旅途當中</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+            background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+            'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+            23.399999618530273px; text-align: center;">與每一個你相遇在未來。</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+            background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+            'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+            23.399999618530273px; text-align: center;">&nbsp;</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+            background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+            'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+            23.399999618530273px; text-align: center;">「
+                The FUTURO belongs to those who believe in the beauty of their dream 」</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+            background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+            'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+            23.399999618530273px; text-align: center;">未來屬於相信他們夢想之美麗的那些人
+                - 埃莉諾·羅斯福 (前第一夫人)</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+            background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+            'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+            23.399999618530273px; text-align: center;">&nbsp;</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+            background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+            'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+            23.399999618530273px; text-align: center;">Live
+                / Nature / Quality</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+                background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+                'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+                23.399999618530273px; text-align: center;">注重生活中的每個小細節、每一次的相遇，</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+                    background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+                    'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+                    23.399999618530273px; text-align: center;">裝點每一天的精彩生活，致力於質感飾品。</p>
+            <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline;
+                        background-color: transparent; color: #333333; font-family: Lato, 'Open Sans' , Helvetica, Arial,
+                        'LiHei Pro' , 微軟正黑體, 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif; line-height:
+                        23.399999618530273px; text-align: center;">每一個人都擁有讓生活更美好的權利
+                ♡</p>
+        </div>
+        <div class="bg-parallax_2">
+            <div id="sec01" class="about-section">
+                <div class="container">
+                    <div class="box-a">
+                        <h1>Be Yourself!</h1>
+                        <span class="about_slogan">堅持簡約的外表，展現更美的自己。</span>
                     </div>
                 </div>
             </div>
@@ -418,10 +672,72 @@
     <div class="section">
         <div id="sec03" class="contact-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Contact Section</h1>
-                    </div>
+                <h1>保養知識</h1>
+            </div>
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <ul class="cards">
+                        <li class="cards_item">
+                            <div class="card">
+                                <div class="card_image"><img src="./05-img/戒指封面1.jpg"></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">戒指大小要怎麼量？戒圍的尺寸讓Futuro告訴你</h2>
+                                    <p class="card_text">看著手上掛滿叮叮噹噹的戒指，是不是超療癒的呢？小編最喜歡到飾品店，看到喜歡...</p>
+                                    <button class="btn card_btn">Read More</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards_item">
+                            <div class="card">
+                                <div class="card_image"><img src="./05-img/110封面1.jpg"></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">穿耳洞沒有想像中可怕！告訴你打耳洞要注意的事</h2>
+                                    <p class="card_text">穿耳洞可說是女孩們在「轉大人」的清單中必做的一件事情。想當初學生時期...</p>
+                                    <button class="btn card_btn">Read More</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards_item">
+                            <div class="card">
+                                <div class="card_image"><img src="./05-img/content_pic_128.jpg"></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">項鍊打結怎麼辦？Futuro告訴你你一定要知道的小撇步</h2>
+                                    <p class="card_text">不管在什麼時候遇到項鍊打結的狀況，想要打扮美美的出門卻還要處理項鍊打結的問題...</p>
+                                    <button class="btn card_btn">Read More</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards_item">
+                            <div class="card">
+                                <div class="card_image"><img src="./05-img/content_pic_129.jpg"></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">耳環收納五妙招，讓你的耳環有個家！再也不怕耳環落單囉～</h2>
+                                    <p class="card_text">耳環種類有好多：耳針式耳環、垂墜式的耳勾耳環、夾式耳環、環狀耳環等各式各樣。雖然...</p>
+                                    <button class="btn card_btn">Read More</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards_item">
+                            <div class="card">
+                                <div class="card_image"><img src="./05-img/content_pic_130.jpg"></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">項鍊收納大絕招，Vacanza教你這3招，項鍊擺美美</h2>
+                                    <p class="card_text">喜愛項鍊的女孩們一定瞭解這樣的情況，每次看到項鍊都會腦波變弱就下手了，不知不覺就累...</p>
+                                    <button class="btn card_btn">Read More</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards_item">
+                            <div class="card">
+                                <div class="card_image"><img src="./05-img/content_pic_131.jpg"></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">夾式耳環怎麼戴？無耳洞耳環的種類與無痛耳夾戴法解密！</h2>
+                                    <p class="card_text">許多女孩們因為各種原因沒有穿耳洞，無痛夾式耳環也就這樣誕生啦～～(真的是救星來著)...</p>
+                                    <button class="btn card_btn">Read More</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -433,7 +749,7 @@
                 <div class="row">
                     <div class="col">
                         <h1>送禮攻略</h1>
-                        
+
                     </div>
                 </div>
             </div>
@@ -507,15 +823,6 @@
         </div>
     </div> -->
 
-<!-- <div class="section_brand">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg">
-                    <h2>品牌概念</h2>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 
 
