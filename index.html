@@ -292,6 +292,82 @@
 
         /* section_about end */
 
+        /* section_product start */
+        #categories {
+            height: 90vh;
+            position: relative;
+            top: 8vh;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+
+        .categories-container {
+            width: 90%;
+            margin: auto;
+        }
+
+        #categories .sub {
+            width: 100%;
+            margin: auto;
+        }
+
+        #categories .sub h1 {
+            width: 100%;
+            height: 35vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2rem;
+            margin: 30px 15px;
+        }
+
+        /* Add hover effect on the h1 of the sub */
+        #categories .sub h1:hover,
+        #categories .sub h1:focus {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .tech {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/834949/pexels-photo-834949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            /*linear gradient successfullly adds a half transparent filter to the picure.*/
+            background-position: center;
+            background-size: cover;
+        }
+
+        .culture {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/682025/pexels-photo-682025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .politics {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/2281/man-person-suit-united-states-of-america.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .business {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/886465/pexels-photo-886465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .health {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .more {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/377058/pexels-photo-377058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-position: center;
+            background-size: cover;
+        }
+
         /* section_contact start */
         img {
             height: auto;
@@ -654,7 +730,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Services Section</h1>
+                        <h1>商品櫥窗</h1>
+                    </div>
+                </div>
+                <div id="categories" class="categories-container">
+                    <div class="sub tech">
+                        <h1>Technology</h1>
+                    </div>
+                    <div class="sub culture">
+                        <h1>Culture</h1>
+                    </div>
+                    <div class="sub politics">
+                        <h1>Politics</h1>
+                    </div>
+                    <div class="sub business">
+                        <h1>Business</h1>
+                    </div>
+                    <div class="sub health">
+                        <h1>Health</h1>
+                    </div>
+                    <div class="sub more">
+                        <h1>More</h1>
                     </div>
                 </div>
             </div>
