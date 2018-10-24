@@ -491,6 +491,79 @@
             font-weight: 700;
         }
 
+        /* section_gift start */
+        .wrapper-2-col {
+            width: 90%;
+            margin: auto;
+
+        }
+
+        .grid-2-col {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+
+        }
+
+        #video {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 4rem;
+
+        }
+
+        #free-trial {
+            position: relative;
+            top: 10vh;
+            text-align: center;
+            padding: 4rem;
+        }
+
+        #free-trial h4 {
+            font-size: 2rem;
+        }
+
+        #free-trial p {
+            font-family: "Open Sans", 'Times New Roman', Times, serif;
+        }
+
+        .center {
+            text-align: center;
+            margin: auto;
+        }
+
+
+        @media (max-width:880px) {
+            .grid-2-col {
+                display: block;
+            }
+
+            #video {
+                margin-top: 5%;
+                margin-bottom: 0px;
+            }
+
+            #free-trial {
+                padding-top: 50px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
+            #free-trial h4 {
+                font-size: 1.5rem;
+            }
+
+            #free-trial p {
+                font-size: .8rem;
+            }
+        }
+
+        /* section_gift end */
+
 
         /* section_footer start */
         .footer {
@@ -867,7 +940,21 @@
                 <div class="row">
                     <div class="col">
                         <h1>送禮攻略</h1>
-
+                        <div class="wrapper-2-col">
+                            <div class="grid-2-col">
+                                <div>
+                                    <video id="video" src="https://www.videvo.net/videvo_files/converted/2016_05/preview/160416_30_Smartphone2.mov39613.webm"
+                                        autoplay="true" loop="true"></video>
+                                </div>
+                                <div id="free-trial">
+                                    <h4>還不知道怎麼選禮物嗎?讓我們為您精挑細選</h4>
+                                    <p>Medium taps into the brains of the world’s most insightful writers, thinkers,
+                                        and storytellers to bring you the smartest takes on topics that matter. So
+                                        whatever your interest, you can always find fresh thinking and unique
+                                        perspectives.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
